@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Frames Prototype</title>
+</head>
+<frameset rows="15%,*,10%">
+  <!-- Top Frame -->
+  <frame 
+    srcdoc="
+      <!DOCTYPE html>
+      <html>
+      <head><meta charset='UTF-8'></head>
+      <body style='margin:0; padding:10px; text-align:center;'>
+        <h2>Name</h2>
+      </body>
+      </html>
+    ">
+
+  <!-- Middle Frameset: 3 columns -->
+  <frameset cols="20%,50%,30%">
+    <!-- Left Frame (Links) -->
+    <frame 
+      srcdoc="
+        <!DOCTYPE html>
+        <html>
+        <head><meta charset='UTF-8'></head>
+        <body style='margin:10px;'>
+          <p>Objective</p>
+          <p>Personal</p>
+          <p>Other</p>
+        </body>
+        </html>
+      ">
+
+    <!-- Center Frame (Info) -->
+    <frame 
+      srcdoc="
+        <!DOCTYPE html>
+        <html>
+        <head><meta charset='UTF-8'></head>
+        <body style='margin:10px;'>
+          <p>Info</p>
+        </body>
+        </html>
+      ">
+
+    <!-- Right Frame (Images) -->
+    <frame 
+      srcdoc="
+        <!DOCTYPE html>
+        <html>
+        <head><meta charset='UTF-8'></head>
+        <body style='margin:10px;'>
+          <p>Images</p>
+        </body>
+        </html>
+      ">
+  </frameset>
+
+  <!-- Bottom Frame -->
+  <frame 
+    srcdoc="
+      <!DOCTYPE html>
+      <html>
+      <head><meta charset='UTF-8'></head>
+      <body style='margin:0; padding:10px; text-align:center;'>
+        <p>Contact</p>
+      </body>
+      </html>
+    ">
+</frameset>
+</html>

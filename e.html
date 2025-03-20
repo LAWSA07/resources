@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Positioning</title>
+  <style>
+    .static-box {
+      background: lightgrey;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .relative-box {
+      background: lightblue;
+      padding: 10px;
+      position: relative;
+      top: 20px;
+      margin-bottom: 10px;
+    }
+    .absolute-box {
+      background: lightgreen;
+      padding: 10px;
+      position: absolute;
+      top: 150px;
+      left: 50px;
+    }
+    .fixed-box {
+      background: lightcoral;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+    .sticky-box {
+      background: lightyellow;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      margin-bottom: 10px;
+    }
+    /* Container to enable scrolling for sticky element demonstration */
+    .container {
+      height: 1500px;
+      padding-top: 60px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="static-box">Static Position</div>
+  <div class="relative-box">Relative Position (moved 20px down)</div>
+  <div class="sticky-box">Sticky Position (sticks to the top on scroll)</div>
+  <div class="container">
+    <p>Scroll down the page to see the sticky element in action.</p>
+    <div class="absolute-box">Absolute Position (positioned 150px from top, 50px from left)</div>
+  </div>
+  <div class="fixed-box">Fixed Position (always at bottom right)</div>
+</body>
+</html>

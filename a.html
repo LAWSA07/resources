@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Effects</title>
+  <style>
+    /* Box with shadow and rounded corners */
+    .box {
+      width: 300px;
+      padding: 20px;
+      margin: 20px auto;
+      background: #f0f0f0;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+      border-radius: 15px;
+    }
+    .shadow-text {
+      font-size: 24px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    /* Newspaper multi-column layout */
+    .newspaper {
+      column-count: 3;
+      column-gap: 20px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p class="shadow-text">This box has box shadow, text shadow, and rounded corners.</p>
+  </div>
+
+  <div class="newspaper">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien at dolor tincidunt malesuada. Proin vitae quam nec elit malesuada interdum.</p>
+    <p>Aliquam erat volutpat. Curabitur pretium dui vel augue convallis, sed interdum sapien aliquet. Maecenas at libero eget enim fermentum faucibus.</p>
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer at massa ac nulla aliquam condimentum.</p>
+  </div>
+</body>
+</html>
